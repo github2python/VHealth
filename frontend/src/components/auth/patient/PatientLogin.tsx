@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useSignIn, useSession } from "@clerk/clerk-react";
+import { useSignIn } from "@clerk/clerk-react";
 import { useNavigate } from "react-router-dom";
 
 const PatientLogin: React.FC = () => {
   const { signIn } = useSignIn();
-  const { session } = useSession();
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");

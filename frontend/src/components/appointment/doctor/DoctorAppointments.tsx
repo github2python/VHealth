@@ -8,8 +8,7 @@ import JitsiMeetComponent from '../../VideoCall';
 
 const DoctorAppointments: React.FC = () => {
   const navigate = useNavigate();
-  const [isChatOpen, setIsChatOpen] = useState(false);
-  const { user } = useUser();
+    const { user } = useUser();
       const role = user?.unsafeMetadata?.role;
       if(role!="doctor"){
         navigate("/doctor/login")

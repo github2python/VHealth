@@ -8,7 +8,7 @@ import { FormInput } from "./FormInput";
 const PatientSignup: React.FC = () => {
   const { isLoaded, signUp, setActive } = useSignUp();
   const [error, setError] = useState<string>("");
-  const [loading, setLoading] = useState<boolean>(false);
+  const [ setLoading] = useState<boolean>(false);
   const [verifying, setVerifying] = useState<boolean>(false);
   const [code, setCode] = useState<string>("");
   const [formData, setFormData] = useState({

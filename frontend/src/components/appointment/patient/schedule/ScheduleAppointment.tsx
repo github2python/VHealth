@@ -25,7 +25,7 @@ const ScheduleAppointment: React.FC = () => {
   const {email} = location.state as { email: string } || { email: "" }; 
   const [doctor, setDoctor] = useState<DoctorDetails | null>(null);
   const [isScheduled, setIsScheduled] = useState(false);
-  const [isChatOpen, setIsChatOpen] = useState(false);
+
   const currentDateTime = new Date();  
   useEffect(() => {
     // Fetch doctor details from the backend

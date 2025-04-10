@@ -12,7 +12,7 @@ const DoctorLogin: React.FC = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const { createdSessionId, session } = await signIn.create({
+       await signIn.create({
         identifier: email,
         password,
       });
